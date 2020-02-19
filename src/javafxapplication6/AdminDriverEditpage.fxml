@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.AdminDriverEditpageController">
+   <children>
+      <Label layoutX="180.0" layoutY="14.0" prefHeight="30.0" prefWidth="228.0" text="Drivers">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="DriverTable" layoutX="27.0" layoutY="48.0" prefHeight="271.0" prefWidth="471.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="49.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="110.0" text="Name" />
+            <TableColumn fx:id="CurrentStatus" prefWidth="130.0" text="Current Status" />
+            <TableColumn fx:id="cnic" prefWidth="181.0" text="Cnic" />
+        </columns>
+      </TableView>
+      <Label layoutX="20.0" layoutY="330.0" prefHeight="28.0" prefWidth="126.0" text="Enter ID" />
+      <TextField fx:id="IDEntered" layoutX="83.0" layoutY="332.0" prefHeight="25.0" prefWidth="179.0" promptText="Select ID" />
+      <Button fx:id="RemoveDB" layoutX="108.0" layoutY="365.0" mnemonicParsing="false" onAction="#removeDriver" prefHeight="34.0" prefWidth="126.0" text="Remove" />
+      <Button fx:id="AddDriverB" layoutX="351.0" layoutY="332.0" mnemonicParsing="false" onAction="#AddDriverAction" prefHeight="50.0" prefWidth="126.0" text="Add Driver" />
+   </children>
+</AnchorPane>

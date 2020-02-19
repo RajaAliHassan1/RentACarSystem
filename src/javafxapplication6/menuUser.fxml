@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MyProfileB" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.MenuUserController">
+   <children>
+      <Label layoutX="39.0" layoutY="33.0" prefHeight="46.0" prefWidth="146.0" text="Welcome ">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="userNameDisLA" layoutX="101.0" layoutY="67.0" prefHeight="25.0" prefWidth="120.0" text="Raja Ali Hassan">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="manageAccountB" layoutX="224.0" layoutY="121.0" mnemonicParsing="false" onAction="#ManageAccount" prefHeight="46.0" prefWidth="133.0" text="My Account" />
+      <Button fx:id="editprofileB" layoutX="52.0" layoutY="121.0" mnemonicParsing="false" onAction="#EditProfile" prefHeight="46.0" prefWidth="133.0" text="My Profile" />
+      <Button fx:id="bookcarsB" layoutX="403.0" layoutY="121.0" mnemonicParsing="false" onAction="#BookCars" prefHeight="46.0" prefWidth="133.0" text="MyBooking" />
+      <Button fx:id="LogoutB" layoutX="504.0" layoutY="8.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="32.0" prefWidth="89.0" text="LogOut" />
+   </children>
+</AnchorPane>

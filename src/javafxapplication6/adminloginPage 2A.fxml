@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.AdminloginPage2AController">
+   <children>
+      <Label layoutX="36.0" layoutY="63.0" prefHeight="39.0" prefWidth="170.0" text="User Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="136.0" prefHeight="39.0" prefWidth="170.0" text="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" layoutX="179.0" layoutY="70.0" prefHeight="39.0" prefWidth="192.0" />
+      <TextField fx:id="password" layoutX="179.0" layoutY="136.0" prefHeight="39.0" prefWidth="192.0" />
+      <Button fx:id="CancelButton" layoutX="69.0" layoutY="209.0" mnemonicParsing="false" onAction="#CancelAction" prefHeight="39.0" prefWidth="122.0" text="Cancel" />
+      <Button fx:id="signinButton" layoutX="256.0" layoutY="209.0" mnemonicParsing="false" onAction="#SigninAction" prefHeight="39.0" prefWidth="122.0" text="SignIn" />
+   </children>
+</AnchorPane>

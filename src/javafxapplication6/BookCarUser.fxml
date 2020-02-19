@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.BookCarUserController">
+   <children>
+      <TableView fx:id="AvailableCarTab" layoutX="263.0" layoutY="44.0" prefHeight="392.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="CarNameCol" prefWidth="130.0" text="Car Name" />
+          <TableColumn fx:id="CarTypeColume" minWidth="0.0" prefWidth="127.0" text="Current Type" />
+            <TableColumn fx:id="CarRentPerDayCol" prefWidth="87.0" text="Rent PerDay" />
+            <TableColumn fx:id="CarRentPerHourCOL" prefWidth="87.0" text="Rent PerHour" />
+            <TableColumn fx:id="CarIdCol" prefWidth="69.0" text="ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="78.0" prefHeight="18.0" prefWidth="144.0" text="Enter Car ID" />
+      <TextField fx:id="BookCartxt" layoutX="98.0" layoutY="74.0" prefHeight="26.0" prefWidth="133.0" promptText="Enter Car ID to Book" />
+      <Button fx:id="BookCarB" layoutX="165.0" layoutY="518.0" mnemonicParsing="false" onAction="#BookCarAction" prefHeight="40.0" prefWidth="133.0" text="Book Car" />
+      <Label layoutX="397.0" layoutY="14.0" prefHeight="26.0" prefWidth="237.0" text="Available Cars">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="DoneButton" layoutX="348.0" layoutY="518.0" mnemonicParsing="false" onAction="#DoneButton" prefHeight="40.0" prefWidth="144.0" text="Done" />
+      <RadioButton fx:id="DriverRadio" layoutX="118.0" layoutY="134.0" mnemonicParsing="false" text="Driver " />
+      <Label layoutX="14.0" layoutY="110.0" prefHeight="18.0" prefWidth="164.0" text="Select if you Want Driver" />
+      <Label layoutX="16.0" layoutY="164.0" prefHeight="26.0" prefWidth="164.0" text="Days Reservation" />
+      <TextField fx:id="DaysTXT" layoutX="98.0" layoutY="201.0" prefHeight="26.0" prefWidth="133.0" promptText="Enter Number of Days" />
+      <Label layoutX="16.0" layoutY="240.0" prefHeight="26.0" prefWidth="164.0" text="Hours Reservation" />
+      <TextField fx:id="HOURSTXT" layoutX="98.0" layoutY="280.0" prefHeight="26.0" prefWidth="133.0" promptText="Enter Num of Hours" />
+      <RadioButton fx:id="DayOrHour" layoutX="128.0" layoutY="374.0" mnemonicParsing="false" text="DayOrHour" />
+      <Label layoutX="16.0" layoutY="334.0" prefHeight="40.0" prefWidth="183.0" text="Select if Reservation for Days" />
+      <CheckBox fx:id="ThreeStarBookingCheck" layoutX="29.0" layoutY="459.0" mnemonicParsing="false" text="ThreeStarBooking" />
+      <CheckBox fx:id="fiveStarCheck" layoutX="29.0" layoutY="485.0" mnemonicParsing="false" text="FiveStarBooking" />
+      <CheckBox fx:id="RegularBookingcheck" layoutX="29.0" layoutY="433.0" mnemonicParsing="false" text="RegularBooking" />
+      <Button fx:id="wantToRemoveButton" layoutX="561.0" layoutY="518.0" mnemonicParsing="false" onAction="#removeActionShiftFile" prefHeight="40.0" prefWidth="192.0" text="Want to Remove Booking?" />
+   </children>
+</AnchorPane>
