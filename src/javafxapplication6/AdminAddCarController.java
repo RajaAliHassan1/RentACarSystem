@@ -25,7 +25,7 @@ import javax.swing.JOptionPane;
 /**
  * FXML Controller class
  *
- * @author Dawar Mustaqeem
+ * @author Raja Ali Hassan
  */
 public class AdminAddCarController implements Initializable {
     @FXML
